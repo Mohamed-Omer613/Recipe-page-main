@@ -1,0 +1,156 @@
+/* **********
+Imports
+********** */
+@font-face{
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+/* **********
+Reset
+********** */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+a{
+    text-decoration: none;
+}
+/* ul{
+    list-style: none;
+} */
+img{
+    max-width: 100%;
+}
+/* **********
+Global
+********** */
+:root{
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body{
+    font-size: 16px;
+    font-family: Outfit;
+}
+h1, h2{
+    text-transform: capitalize;
+    font-family: 'Young Serif';
+}
+h1{
+    color: var(--Dark-Charcoal);
+    font-size: 2em;
+    margin: 1em 0;
+}
+h2{
+    color: var(--Nutmeg);
+    margin: .7em;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    margin-bottom: 1.5em;
+}
+p{
+    color: var(--Wenge-Brown);
+}
+ul, ol{
+    list-style-position: inside;
+}
+ul li, ol li{
+    color: var(--Dark-Raspberry);
+    padding: 0.6;
+}
+ul li b, ol li b{
+    color: var(--Dark-Charcoal);
+}
+ul li span, ol li span{
+    color: var(--Wenge-Brown);
+}
+
+/* **********
+Page Content
+********** */
+header img{
+    width: 100%;
+}
+#prepsec .container{
+    background-color: var(--Rose-White);
+    padding: 1em;
+    border-radius: 0.625em;
+}
+#prepsec{
+    color: var(--Dark-Raspberry);
+}
+#prepsec h3{
+    padding-bottom: 0.6em;
+}
+
+#prepsec ul li b{
+    color: var(--Dark-Charcoal);
+}
+#prepsec ul li span{
+    color: var(--Wenge-Brown);
+}
+.nutsec{
+    padding: 1.8em;
+}
+.nut-items{
+    padding: 1em 0;
+}
+.nut-item{
+    padding: 0.5em 0.8em;
+    display: flex;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.nut-item div:first-child{
+    width: 50%;
+}
+.nut-item div:nth-child(2){
+    color: var(--Dark-Raspberry);
+}
+/* **********
+Media
+********** */
+@media screen and (min-width: 1023px) {
+    body{
+        background-color: var(--Eggshell);
+    }
+    .card{
+        background-color: var(--White);
+        width: 60%;
+        margin: 3em auto;
+        border-radius: 0.625em;
+    }
+    img{
+        padding: 1.5em;
+        border-radius: 0.350em;
+    }
+    .nutsec{
+        padding: 4em;
+    }
+}
